@@ -1,0 +1,41 @@
+{
+  "name": "kleinanzeigen electronik",
+  "baseSelector": "#viewad-main",
+  "fields": [
+    {
+      "name": "name",
+      "selector": "#viewad-title",
+      "type": "text"
+    },
+    {
+      "name": "price",
+      "selector": "#viewad-price",
+      "type": "text"
+    },
+    {
+      "name": "address",
+      "selector": "#viewad-locality",
+      "type": "text"
+    },
+    {
+      "name": "details",
+      "selector": "#viewad-description-text",
+      "type": "text"
+    },
+    {
+      "name": "condition",
+      "selector": "#viewad-details > ul > li:nth-child(2) > span",
+      "type": "text"
+    },
+    {
+      "name": "ad_since",
+      "selector": "#viewad-extra-info > div:nth-child(1) > span",
+      "type": "text"
+    },
+    {
+      "name": "number_of_people_watching",
+      "selector": "#viewad-cntr-num",
+      "type": "text"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "links",
+  "baseSelector": "#srchrslt-adtable > li",
+  "type": "list",
+  "fields": [
+    {
+      "name": "url",
+      "selector": "article > div.aditem-main > div.aditem-main--middle > h2 > a",
+      "type": "attribute",
+      "attribute": "href"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "News",
+    "baseSelector": "#main-content > article > section:nth-child(3) > div",
+    "fields": [
+      {
+        "name": "live",
+        "selector": "div.sc-93223220-0.lbLNTF > div:nth-child(1) > div > a > div > div > div > h2",
+        "type": "text"
+      }
+    ]
+  }
+  

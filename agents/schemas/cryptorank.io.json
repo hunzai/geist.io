@@ -1,0 +1,23 @@
+{
+  "name": "Token Unlocks",
+  "baseSelector": "#root-container > section > div.sc-a1033891-0.sc-e739bd4e-0.lifXfW.bxDZvl > div > div > div.sc-7145b3a-0.hyVYKV > table > tbody",
+  "fields": [
+    {
+      "name": "tx",
+      "selector": "tr",
+      "type": "list",
+      "fields": [
+        {
+          "name": "name",
+          "selector": "td.sc-4b43e9a5-0.jIGLQ > a",
+          "type": "text"
+        },
+        {
+            "name": "total",
+            "selector": "td.sc-4b43e9a5-0.hGpzWm > a > div > div.sc-2ecfa897-0.sc-2f762db-1.jkRsjD.XmwRu > p.sc-56567222-0.jvlrjM",
+            "type": "text"
+        }
+      ]
+    }
+  ]
+}

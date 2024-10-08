@@ -1,0 +1,56 @@
+{
+    "name": "Eth Transactions",
+    "baseSelector": "#ContentPlaceHolder1_divTransactions > div.table-responsive > table > tbody",
+    "fields": [
+        {
+            "name": "tx",
+            "selector": "tr",
+            "type": "list",
+            "fields": [
+                            {
+                                "name": "hash",
+                                "selector": "td:nth-child(2) > div > span > a",
+                                "type": "text"
+                            },
+                            {
+                                "name": "method",
+                                "selector": "td:nth-child(3) > span",
+                                "type": "text"
+                            },
+                            {
+                                "name": "block",
+                                "selector": "td:nth-child(4) > a",
+                                "type": "text"
+                            },
+                            {
+                                "name": "block_link",
+                                "selector": "td:nth-child(4) > a",
+                                "type": "attribute",
+                                "attribute": "href"
+                            },
+                            {
+                                "name": "from",
+                                "selector": "td:nth-child(8) > div > div > a",
+                                "type": "text"
+                            },
+                            {
+                                "name": "to",
+                                "selector": "td:nth-child(10) > div > div > a",
+                                "type": "text"
+                            },
+                            {
+                                "name": "to_link",
+                                "selector": "td:nth-child(10) > div > div > a",
+                                "type": "attribute",
+                                "attribute": "href"
+                            },
+                            {
+                                "name": "amount",
+                                "selector": "td:nth-child(11) > span.td_showAmount",
+                                "type": "text"
+                            }
+            ]
+        }
+
+    ]
+}
