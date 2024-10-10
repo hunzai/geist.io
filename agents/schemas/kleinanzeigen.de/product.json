@@ -1,6 +1,6 @@
 {
-  "name": "kleinanzeigen electronik",
-  "baseSelector": "#viewad-main",
+  "name": "kleinanzeigen",
+  "baseSelector": "#viewad-cntnt",
   "fields": [
     {
       "name": "name",

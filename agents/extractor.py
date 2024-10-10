@@ -13,7 +13,7 @@ class MarketPlace:
                 wait_for="footer"
             )
 
-        if not results[0].success:
+        if not results[0].success: #todo
             raise RuntimeError(f"Failed to crawl the page: {urls}")
 
         extraction_strategy = JsonCssExtractionStrategy(schema, verbose=True)
@@ -21,7 +21,7 @@ class MarketPlace:
         data = []
         for result in results:
             content = extraction_strategy.extract('', result.html)
-            data.append(content)
+            data.append({'url': result.url, 'data': content})
         return data
    
     async def extract_data(self, url, schema):
@@ -36,5 +36,4 @@ class MarketPlace:
             raise RuntimeError(f"Failed to crawl the page: {url}")
 
         extraction_strategy = JsonCssExtractionStrategy(schema, verbose=True)
-        # return result
         return extraction_strategy.extract('', result.html)
