@@ -1,6 +1,6 @@
 # main.py
 import asyncio
-from agents.kleineanzeigen import Kleinanzeigen
+from agents.best_sold import BestSold
 from agents.utils import Util
 import argparse
 
@@ -9,11 +9,11 @@ async def main(url):
     category_schema_file = "agents/schemas/kleinanzeigen.de/links.json"
     product_schema_file = "agents/schemas/kleinanzeigen.de/product.json"
 
-    # Initialize Kleinanzeigen with schema file paths
-    kleinanzeigen = Kleinanzeigen(category_schema_file, product_schema_file)
+    # Initialize BestSold with schema file paths
+    best_sold_items = BestSold(category_schema_file, product_schema_file)
 
     # Run the extraction process
-    final_data = await kleinanzeigen.run(base_url)
+    final_data = await best_sold_items.run(base_url)
     Util.save_to_file(final_data, "data/products.json")
 
 if __name__ == "__main__":

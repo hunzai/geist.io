@@ -1,15 +1,14 @@
-# agents/kleinanzeigen.py
-import asyncio
-from agents.extractor import MarketPlace
+# agents/best_sold.py
+from common.crawler import Crawler
 from agents.utils import Util
 
-class Kleinanzeigen:
+class BestSold:
     def __init__(self, category_schema_file, product_schema_file):
         # Store file paths for the schemas
         self.category_schema_file = category_schema_file
         self.product_schema_file = product_schema_file
 
-        self.marketplace = MarketPlace()
+        self.marketplace = Crawler()
         # Load the schemas from the provided files
         self.category_schema = Util.load_schema(self.category_schema_file)
         self.product_schema = Util.load_schema(self.product_schema_file)

@@ -3,7 +3,7 @@
 from crawl4ai import AsyncWebCrawler
 from crawl4ai.extraction_strategy import JsonCssExtractionStrategy
 
-class MarketPlace:
+class Crawler:
 
     async def extract_data_multiple(self, urls, schema):
         async with AsyncWebCrawler(verbose=True) as crawler:
