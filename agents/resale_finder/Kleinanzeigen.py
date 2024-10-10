@@ -1,8 +1,8 @@
 # agents/best_sold.py
 from common.crawler import Crawler
-from agents.utils import Util
+from common.utils import Util
 
-class BestSold:
+class Kleinanzeigen:
     def __init__(self, category_schema_file, product_schema_file):
         # Store file paths for the schemas
         self.category_schema_file = category_schema_file
